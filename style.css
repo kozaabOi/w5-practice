@@ -21,7 +21,36 @@ div.country {
   align-items: center;
   gap: 20px;
 
+  color: black
+
   padding: 20px;
+
+  transition: all 1.5s ease;
+}
+
+div:nth-child(5n - 4).country.clicked {
+  border: 2px solid white;
+  color: white;
+}
+
+div:nth-child(5n - 3).country.clicked {
+  border: 2px solid red;
+  color: red;
+}
+
+div:nth-child(5n - 2).country.clicked {
+  border: 2px solid yellow;
+  color: yellow;
+}
+
+div:nth-child(5n - 1).country.clicked {
+  border: 2px solid green;
+  color: green;
+}
+
+div:nth-child(5n).country.clicked {
+  border: 2px solid blue;
+  color: blue;
 }
 
 h2, h3 {
